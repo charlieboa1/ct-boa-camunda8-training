@@ -1,0 +1,27 @@
+spring:
+  application:
+      name: saas-zeebe
+
+
+
+# https://docs.camunda.io/docs/apis-tools/spring-zeebe-sdk/getting-started/
+# https://docs.camunda.io/docs/apis-tools/spring-zeebe-sdk/configuration/
+
+camunda:
+  client:
+    mode: saas
+    auth:
+      client-id: T_allMYTy17Hux6_9CkTl_H_cdNQNgos
+      client-secret: .qWsIW~XkB9GIdZfwkblpTQN8DS5fbSDm7.P8-0nmjtNINdTYLteZ_sI0pn9yC3B
+    cluster-id: 81bd9c7c-bc5c-4a4a-9427-48831832c393
+    region: ric-1
+
+
+zeebe:
+  broker:
+    gateway:
+      cluster:
+        requestTimeout: 40s
+
+server:
+  port: 0
