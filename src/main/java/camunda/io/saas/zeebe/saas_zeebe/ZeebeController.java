@@ -17,7 +17,7 @@ public class ZeebeController {
     private ZeebeService zeebeService;
 
 
-    @GetMapping("/createProceccInstance")
+    @GetMapping("/createProcessInstance")
     public void createProcessInstance(@RequestParam("processInstanceId") String processInstancId) {
 
             zeebeService.startProcessByProcessId(processInstancId);
